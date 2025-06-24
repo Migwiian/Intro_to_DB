@@ -1,4 +1,4 @@
-import mysql.connector
+"import mysql.connector
 conn = mysql.connector.connect(
     host = "localhost", 
     user = "root", 
@@ -10,5 +10,5 @@ if conn.is_connected():
     cursor.close()
     conn.close()
 else:
-    print("Error: Failed to connect to MySQL server")
+    print("except mysql.connector.Error")
 
